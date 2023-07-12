@@ -6,11 +6,12 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  height: 2000px;
 }
 
 :root {
@@ -23,17 +24,20 @@ a {
 
 .container {
   width: 1110px;
+  max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 
 .button {
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 10px 22px;
   height: 50px;
   background: var(--primary-color);
   color: #fff;
   border: none;
   outline: none;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .button:hover {
@@ -42,7 +46,7 @@ a {
 
 /***  header  ***/
 .header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #e6f0ff;
   padding-top: 38px;
@@ -82,9 +86,62 @@ a {
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
 }
 
 .header__navbar__action .signInBtn {
   background: transparent;
   color: var(--primary-color);
+}
+
+.header__hero__info {
+  margin-top: 130px;
+  width: 51%;
+  display: inline-block;
+}
+
+.header__hero__info .subTitle {
+  color: #687690;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.header__hero__info .title {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  color: #000336;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 76px;
+}
+
+.header__hero__info .desc {
+  color: #5a6473;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.header__hero__info .button {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 15px 38px;
+  text-transform: capitalize;
+  min-width: 170px;
+  color: #fff;
+  font-family: Poppins;
+}
+
+.header__hero__image {
+  position: absolute;
+  bottom: 0;
+  right: calc((100vw - 1110px) / 2);
+  transform: translateX(100px);
 }
