@@ -3,54 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>F8 Project 01</title>
   </head>
 
   <body>
-    <!-- header -->
-    <header class="header">
-      <div class="container">
-        <!-- navbar -->
-        <nav class="header__navbar">
-          <div class="header__navbar__logo">
-            <div class="wrapLogo">
-              <img src="./assets/img/Logo.svg" alt="logo" />
+    <div class="root">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <!-- navbar -->
+          <nav class="header__navbar">
+            <div class="header__navbar__logo">
+              <div class="wrapLogo">
+                <img src="./assets/img/Besnik..png" alt="logo" />
+              </div>
+            </div>
+
+            <ul class="header__navbar__navigaton">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="header__navbar__action">
+              <button class="signInBtn button">Sign in</button>
+              <button class="signUpBtn button">Sign up</button>
+            </div>
+          </nav>
+
+          <!-- hero -->
+          <div class="header__hero">
+            <div class="header__hero__info">
+              <p class="subTitle">Welcome to Besnik Agency</p>
+              <h1 class="title">Discover a place you'll love to live.</h1>
+              <p class="desc">
+                Get the best real estate deals first, before they hit the mass
+                market! HOT FORECLOSURE DEALS with one simple search
+              </p>
+              <button class="button">more about us</button>
+            </div>
+
+            <div class="header__hero__image">
+              <img src="./assets/img/house illustration.svg" alt="hero" />
             </div>
           </div>
+        </div>
+      </header>
 
-          <ul class="header__navbar__navigaton">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <!-- main -->
+      <div class="content">
+        <!--  clientsLogo  -->
+        <div class="clientsLogo">
+          <div class="container">
+            <div class="clientsLogo__heading">
+              <div class="clientsLogo__mainHeading">
+                <img src="./assets/img/Besnik..png" alt="logo" />
+                <img src="./assets/img/Star.png" alt="Star" />
+              </div>
+              <div class="clientsLogo__subHeading">
+                <div class="clientsLogo__subHeading-title">
+                  More than 45,000+ companies trust besnik
+                </div>
+                <div class="clientsLogo__subHeading-rating">
+                  5 Star Ratings (2k+ Review)
+                </div>
+              </div>
+            </div>
 
-          <div class="header__navbar__action">
-            <button class="signInBtn button">Sign in</button>
-            <button class="signUpBtn button">Sign up</button>
+            <div class="clientsLogo__list">
+              <div class="clientsLogo__item">
+                <img src="./assets/img/company/logo.png" alt="" />
+              </div>
+              <div class="clientsLogo__item">
+                <img src="./assets/img/company/logo (1).png" alt="" />
+              </div>
+              <div class="clientsLogo__item">
+                <img src="./assets/img/company/logo.png" alt="" />
+              </div>
+              <div class="clientsLogo__item">
+                <img src="./assets/img/company/logo (3).png" alt="" />
+              </div>
+              <div class="clientsLogo__item">
+                <img src="./assets/img/company/logo (4).png" alt="" />
+              </div>
+            </div>
           </div>
-        </nav>
+        </div>
 
-        <!-- hero -->
-        <div class="header__hero">
-          <div class="header__hero__info">
-            <p class="subTitle">Welcome to Besnik Agency</p>
-            <h1 class="title">Discover a place you'll love to live.</h1>
-            <p class="desc">
-              Get the best real estate deals first, before they hit the mass
-              market! HOT FORECLOSURE DEALS with one simple search
+        <!--  services  -->
+        <div class="services">
+          <div class="container">
+            <h2 class="services__heading">How its works?</h2>
+            <p class="services__desc">
+              Everything you need to know when you're looking to buy, rent, or
+              sell - all in one place.
             </p>
-            <button class="button">more about us</button>
-          </div>
 
-          <div class="header__hero__image">
-            <img src="./assets/img/house illustration.svg" alt="hero" />
+            <div class="services__list">
+              <div class="services__item">
+                <img src="./assets/img/iconcart.png" alt="" />
+                <p class="desc">Buyer Guides</p>
+                <a class="linkAddress" href="#">How to buy</a>
+              </div>
+              <div class="services__item">
+                <img src="./assets/img/iconhouse.png" alt="" />
+                <p class="desc">Renter Guides</p>
+                <a class="linkAddress" href="#">How to buy</a>
+              </div>
+              <div class="services__item">
+                <img src="./assets/img/iconmoney.png" alt="" />
+                <p class="desc">Seller Guides</p>
+                <a class="linkAddress" href="#">How to buy</a>
+              </div>
+            </div>
+
+            <button class="button">Sell Full Guidelines</button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
   </body>
 </html>
