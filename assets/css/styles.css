@@ -11,7 +11,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  height: 3000px;
+  height: 10000px;
 }
 
 :root {
@@ -54,14 +54,20 @@ a {
 }
 
 .header__navbar {
-  display: flex;
-  align-items: center;
+  width: 100%;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
   background: #e6f0ff;
-  width: 100%;
   padding: 12px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header__navbar .container {
+  display: flex;
+  align-items: center;
 }
 
 .header__navbar__logo .wrapLogo {
@@ -107,7 +113,7 @@ a {
 
 .header__hero__info .subTitle {
   color: #687690;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
@@ -140,7 +146,7 @@ a {
   text-transform: capitalize;
   min-width: 170px;
   color: #fff;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .header__hero__image {
@@ -170,7 +176,7 @@ a {
   display: flex;
   justify-content: space-between;
   color: #7d8589;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
@@ -197,6 +203,7 @@ a {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease-in-out;
 }
+
 .services {
   margin-top: 160px;
 }
@@ -204,7 +211,7 @@ a {
 .services__heading {
   color: #000339;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
@@ -230,7 +237,7 @@ a {
   margin: 0 auto;
   color: #5a6473;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -246,7 +253,7 @@ a {
 .services__list .desc {
   color: #3b3c45;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
@@ -257,7 +264,7 @@ a {
 .services__list .linkAddress {
   color: #0689ff;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;
@@ -277,7 +284,7 @@ a {
 
   color: #fff;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
@@ -294,7 +301,7 @@ a {
 
 .features__heading {
   color: #000339;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 600;
@@ -303,7 +310,7 @@ a {
 
 .features__subHeading {
   color: #5a6473;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -318,7 +325,7 @@ a {
 .features__subHeading a {
   color: #0689ff;
   text-align: right;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -333,8 +340,18 @@ a {
 
 .features__item {
   border-radius: 12px;
+  overflow: hidden;
   background: #fff;
   box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+}
+
+.features__item > img {
+  max-height: 227px;
+  width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .features__item-content {
@@ -343,7 +360,7 @@ a {
 
 .features__item-content .heading {
   color: #000339;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
@@ -352,7 +369,7 @@ a {
 
 .features__item-content .desc {
   color: #a3a6ab;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -371,4 +388,242 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* ****** resources ******* */
+.resources {
+  margin-top: 125px;
+}
+
+.resources .container {
+  padding: 0 30px;
+}
+
+.resources .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources .col {
+  width: 50%;
+}
+
+.resources .col-left {
+  width: 50%;
+  position: relative;
+}
+
+.resources__statsTrend {
+  padding: 45px 22px;
+  width: 240px;
+  max-width: 240px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0px 0px 12px 12px;
+  background: #fff;
+  box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+}
+
+.resources__stats-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources__stats-heading span:first-child {
+  color: #000339;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 100% */
+  letter-spacing: 0.26px;
+}
+
+.resources__stats-heading span:last-child {
+  color: #000339;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.26px;
+}
+
+.resources__statsTrend .desc {
+  color: #a7a7a7;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-top: 8px;
+}
+
+.resources__statsTrend .line {
+  margin-top: 25.5px;
+  width: 100%;
+  height: 1.2px;
+  background: #e9e9e9;
+}
+
+.resources__wrapImg {
+  margin-left: auto;
+  width: 400px;
+  height: 460px;
+
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 40px 80px 155px 0px rgba(30, 103, 113, 0.03);
+}
+
+.resources__wrapImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.iconList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 14px;
+  margin-top: 26px;
+}
+
+.iconList-group {
+  display: flex;
+}
+
+.iconList-group img {
+  width: 16px;
+  height: 16px;
+  margin-left: -3px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--bg-color, #fff);
+  font-weight: 450;
+  font-size: 0.7rem;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.col-right {
+  padding: 80px 0px 0px 165px;
+}
+
+.col-right .heading {
+  width: 269px;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.29;
+  color: #000339;
+  position: relative;
+}
+
+.col-right .heading::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+}
+
+.col-right .desc {
+  width: 309px;
+  color: #5a6473;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  margin-top: 20px;
+}
+
+.col .titleNumber {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 100% */
+}
+
+.col .titleName {
+  color: #7b8087;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 24px;
+}
+
+.row.info {
+  display: flex;
+  margin-top: 110px;
+  justify-content: space-between;
+}
+
+.row.info .col {
+  text-align: center;
+  width: auto;
+}
+
+.contact {
+  margin-top: 140px;
+}
+
+.contact .container {
+  border-radius: 20px;
+  background: #063183;
+  padding: 149px 0 0 80px;
+  position: relative;
+  height: 370px;
+}
+
+.contact__heading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px; /* 100% */
+}
+
+.contact__subHeading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.contact .button {
+  border-radius: 12px;
+  background: #fff;
+  color: #002366;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 14px 43px 16px 43px;
+}
+
+.contact img {
+  position: absolute;
+  bottom: 0;
+  right: 222px;
 }
